@@ -26,7 +26,7 @@ Kerala's farms are under pressure. For a Kuttanad paddy field near Alappuzha, NA
 
 1. **Pick your field** on the map, or one of 7 Kerala farming zones (Kuttanad, Palakkad, Onattukara, Kole, midland laterite, Wayanad, northern coast).
 2. **Describe it:** soil, drainage, salinity, irrigation and what you grow now.
-3. **Set your priorities:** saving water, soil health, income, avoiding climate risk.
+3. **Set your priorities:** saving water, soil health, income, avoiding climate risk, better soil yeild.
 4. Mannova pulls **25 years of NASA climate data** for that exact point and tests about **2,000 three-season rotations** of 14 Kerala crops against dry years, wet-year waterlogging, heat, salinity and evaporative demand.
 5. It compares **your current rotation with the 3 best alternatives**, with crop names in Malayalam. For each strategy it shows:
    - a 12-month field calendar highlighting bare months and vulnerable seasons
