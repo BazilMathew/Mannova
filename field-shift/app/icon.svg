@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><rect width="120" height="120" rx="28" fill="#14532d"/>
+<defs><clipPath id="cbico"><circle cx="60" cy="60" r="52"></circle></clipPath></defs>
+<circle cx="60" cy="60" r="52" fill="#0b3324"></circle>
+<g clip-path="url(#cbico)">
+<path d="M0 70 Q30 60 60 70 T120 70 V120 H0 Z" fill="#a16207"></path>
+<path d="M0 84 Q30 75 60 84 T120 84 V120 H0 Z" fill="#7c4a2d"></path>
+<path d="M0 98 Q30 90 60 98 T120 98 V120 H0 Z" fill="#4a2c1a"></path>
+<path d="M0 70 Q30 60 60 70 T120 70" fill="none" stroke="#65a30d" stroke-width="5"></path>
+</g>
+<path d="M60 14 L64.5 33 L83 37.5 L64.5 42 L60 61 L55.5 42 L37 37.5 L55.5 33 Z" fill="#f59e0b"></path>
+<circle cx="60" cy="60" r="52" fill="none" stroke="#bef264" stroke-width="3"></circle>
+</svg>
