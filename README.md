@@ -2,7 +2,7 @@
   <img src="field-shift/public/brand/wordmark-dark.png" alt="Mannova" width="420">
 </p>
 
-<p align="center"><b>New life for Kerala's soil: crop rotations guided by NASA satellites</b></p>
+<p align="center"><b>New Life for Kerala's soil: crop rotations guided by NASA satellites</b></p>
 
 <p align="center">
   <a href="https://mannova.vercel.app"><b>Live app: mannova.vercel.app</b></a>
