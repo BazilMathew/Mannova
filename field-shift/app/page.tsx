@@ -13,6 +13,7 @@ import StrategyDetail from "@/components/StrategyDetail";
 import Glossary from "@/components/Glossary";
 
 const FieldMap = dynamic(() => import("@/components/FieldMap"), { ssr: false, loading: () => <div className="mapph">Loading map…</div> });
+const SatelliteMap = dynamic(() => import("@/components/SatelliteMap"), { ssr: false, loading: () => <section className="card"><div className="mapph" style={{ height: 420 }}>Loading satellite view…</div></section> });
 
 const START = REGIONS[0];
 const PRIORITIES = [
@@ -110,7 +111,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-chips">
-            <span>🛰 NASA POWER · 25 yrs</span>
+            <span>🛰 NASA POWER + GIBS satellites</span>
             <span>🌾 14 Kerala crops</span>
             <span>📍 7 farming zones</span>
           </div>
@@ -247,6 +248,7 @@ export default function Home() {
                 <StrategyGrid items={items} selected={keyOf(selIdx)} onSelect={setSelected} />
               </section>
               <StrategyDetail r={items[selIdx]} current={results.current} label={selIdx === 0 ? "Your current rotation" : `Option ${selIdx}${selIdx === 1 ? " · best match" : ""}`} />
+              <SatelliteMap lat={lat} lon={lon} place={place} />
               <ClimateCharts c={climate} />
               <Glossary />
             </>
@@ -255,11 +257,13 @@ export default function Home() {
             <h4>Data sources</h4>
             <ul>
               <li><b>NASA POWER</b> (Agroclimatology): monthly temperature, bias-corrected precipitation, humidity and root-zone soil wetness · power.larc.nasa.gov</li>
+              <li><b>NASA GIBS</b> satellite imagery (gibs.earthdata.nasa.gov): MODIS NDVI vegetation index, SMAP soil moisture, GPM IMERG precipitation, MODIS land surface temperature and MODIS true colour</li>
               <li>Reference evapotranspiration (ET₀): Hargreaves method (FAO-56) applied to NASA POWER temperatures</li>
               <li>Crop characteristics: indicative values for 14 Kerala crops; verify with the KAU Package of Practices</li>
               <li>Region presets: typical conditions for Kerala&apos;s farming zones</li>
             </ul>
             <p>Decision support only: Mannova compares options; it does not replace farmers&apos; judgement or local agricultural advice.</p>
+            <p className="ai-note">AI disclosure: this project was built with help from an AI assistant (Anthropic&apos;s Claude) for code, explanatory text and the logo. Design decisions, testing and data validation were done by the author.</p>
           </footer>
         </div>
       </main>

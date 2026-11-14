@@ -1,4 +1,6 @@
-# Field Shift — NASA Space Apps 2026
+# Mannova — NASA Space Apps 2026
+
+*Mannova* = *Mannu* (മണ്ണ്, Malayalam for "soil") + *nova* (Latin for "new"): new life for the soil. Mannova uses NASA Earth data to help Kerala farmers explore crop rotations that improve soil health and resilience.
 
 Decision-support tool that helps farmers explore crop rotations using NASA Earth observation data, local soil conditions, crop characteristics and their own priorities.
 
@@ -37,7 +39,23 @@ npm run dev
 - `lib/rotation.ts`: scoring engine
 - `components/`: map, charts, rotation cards
 
+## Satellite view (NASA GIBS)
+
+`/api/gibs` checks which NASA GIBS layer names are live (each layer has a list of candidate identifiers) and the map shows them through the GIBS WMS endpoint:
+MODIS NDVI (vegetation health), SMAP L4 soil moisture, GPM IMERG precipitation, MODIS land surface temperature and MODIS true colour.
+
 ## Data sources
 
 - NASA POWER, https://power.larc.nasa.gov (Agroclimatology community, monthly point API)
+- NASA GIBS, https://gibs.earthdata.nasa.gov (MODIS, SMAP, GPM IMERG imagery)
+- FAO Irrigation and Drainage Paper 56 (Hargreaves ET₀)
 - Crop parameters: indicative; verify with the Kerala Agricultural University Package of Practices
+
+## Use of AI (Space Apps SI disclosure)
+
+This project was built with help from an AI assistant, Anthropic's Claude, which was used to:
+- write and refactor application code (NASA data processing, the rotation scoring engine, the user interface)
+- draft explanatory text in the app and this README
+- create the Mannova logo (SVG)
+
+The author chose the challenge, region and approach, made the design decisions, tested the app against live NASA data, and deployed it.
