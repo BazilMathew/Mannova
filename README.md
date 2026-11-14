@@ -79,7 +79,7 @@ Key files: `lib/power.ts` (NASA POWER client), `lib/climate.ts` (climate profile
 ## Use of AI (Space Apps SI disclosure)
 
 This project was built with help from AI tools:
-- **Anthropic's Claude**: helped write and refactor the application code (NASA data processing, rotation scoring engine, interface), draft explanatory text and this README, and create the Mannova logo.
-- **Canva AI**: generated the slide layout and stock imagery in the demo deck.
+- **Anthropic's Claude**: helped write and refactor the application code (NASA data processing, rotation scoring engine, interface), this README and create the Mannova logo.
+- **Canva AI**: Generated the slide layout and stock imagery in the demo deck.
 
 Our team chose the challenge, region and approach, made the design decisions, tested the app with live NASA data, verified the results and deployed it.
